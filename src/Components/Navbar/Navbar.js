@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <Headroom>
             <header className="header">
-                <a href="/ushakomati-portfolio" className="logo">
+                <a href="/portfolio" className="logo">
                     <span className="greyColor"> &lt;</span>
                     <span className="logoName">{"Usha Komati"}</span>
                     <span className="greyColor">/&gt;</span>
