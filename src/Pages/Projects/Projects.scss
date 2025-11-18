@@ -1,0 +1,27 @@
+@import '../../styles/GlobalStyle.scss';
+
+.title {
+    font-family: $fontStyle;
+    font-size: $titleSize;
+}
+
+.subtitle {
+    font-size: $subTitleSize;
+    text-align: center;
+    font-family: $fontStyle;
+    color: $subTitleColor;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+@media (max-width: $tablet) {
+    .projectContainer {
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../styles/GlobalStyle.scss';
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 3px;
+  margin: 0px auto;
+}
+
+.experience-section>* {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: $fontStyle;
+  font-size: $titleSize;
+}
+
+.experience-card-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+@media (max-width: 1380px) {
+  .experience-card-container {
+    padding-top: 3px;
+  }
+
+  .experience-text-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $tablet) {
+  .experience-card-container {
+    padding-top: 2px;
+  }
+
+  .experience-text-subtitle {
+    font-size: 16px;
+  }
+}

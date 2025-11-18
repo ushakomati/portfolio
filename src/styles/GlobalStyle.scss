@@ -1,0 +1,23 @@
+$titleColor: #000000;
+$subTitleColor: #778088;
+$midnightBlue: #191970;
+$aquaBlue: #0FFFFF;
+
+$titleSize: 2rem; // reduced from 2.5rem
+$subTitleSize: 1.25rem; // reduced from 1.25rem
+
+$skillsColor: #645beb;
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+// font family
+$fontStyle: 'KoHo';
+$logoFont2: 'Tangerine';
+
+// media query
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;

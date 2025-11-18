@@ -1,0 +1,117 @@
+@import '../../styles/GlobalStyle.scss';
+
+.aboutContainer {
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+.aboutDetails {
+    padding: 3rem;
+}
+
+.glitch {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: $fontStyle;
+    // text-transform: uppercase;
+    position: relative;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.type-writer {
+    font-size: 2rem;
+    text-align: justify;
+    color: $subTitleColor;
+    font-family: $fontStyle;
+}
+
+.subtitle {
+    font-size: $subTitleSize;
+    text-align: justify;
+    color: $subTitleColor;
+    font-family: $fontStyle;
+}
+
+.hover-button {
+    padding: 1rem 2rem;
+    background-color: #55198b;
+    outline: none;
+    border: none;
+    font-size: inherit;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: .3rem;
+        left: 0;
+        bottom: 0;
+        background-color: #a4acc4;
+        ;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.lottieConatiner {
+    width: 150rem;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(14deg);
+    }
+
+    30% {
+        transform: rotate(-8deg);
+    }
+
+    40% {
+        transform: rotate(14deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: $tablet) {
+    .aboutContainer {
+        display: block;
+        text-align: center;
+    }
+
+    .lottieConatiner {
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,150 @@
+@import '../../styles/GlobalStyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+.subTitle {
+  text-align: justify;
+  color: $subTitleColor;
+  font-family: $fontStyle;
+}
+
+.experience-card {
+  font-family: $fontStyle, 'Merriweather';
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-card:hover+.experience-card-border {
+  border-color: #a9a7f9;
+  width: 100%;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.experience-card-border {
+  height: 30px;
+  width: 80%;
+  border-top: 2px solid rgba(211, 211, 211, 0.397);
+  margin-bottom: 20px;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
+}
+
+.experience-roundedimg {
+  object-fit: cover;
+  margin-right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.experience-card-right {
+  max-width: 70%;
+}
+
+.experience-text-company {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  /* allow wrapping instead of truncating */
+  /* removed text-overflow, overflow, white-space and fixed height to show entire name */
+  line-height: 1.12;
+  word-break: break-word;
+  word-wrap: break-word;
+  // margin-bottom: 5px;
+}
+
+.experience-text-jobtitle {
+  color: #000000;
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0px;
+  padding-top: 0.8rem;
+  line-height: normal;
+  margin-top: 2px;
+}
+
+.experience-text-duration {
+  color: $titleColor;
+  font-size: 19px;
+  margin: 0px;
+  padding-top: 0.5rem;
+}
+
+.experience-text-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-text-bullets>ul {
+  margin-top: 0.5rem;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .experience-card {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .experience-card-right {
+    max-width: 90%;
+  }
+
+  .experience-card-border {
+    width: 90%;
+  }
+
+  .experience-text-jobtitle {
+    padding-top: 0.5rem;
+    font-size: 16px;
+  }
+
+  .experience-text-company {
+    font-size: 20px;
+    /* removed fixed height so company name can wrap on smaller screens */
+  }
+
+  .experience-text-duration {
+    font-size: 16px;
+  }
+
+  .experience-roundedimg {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .experience-card {
+    text-align: center;
+  }
+
+  .experience-card-right {
+    max-width: 100%;
+  }
+
+  .experience-card-border {
+    width: 100%;
+  }
+
+  .experience-roundedimg {
+    margin-top: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .experience-text-bullets>ul {
+    max-width: 80%;
+    margin: auto;
+  }
+}

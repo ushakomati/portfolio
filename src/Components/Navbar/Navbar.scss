@@ -1,0 +1,193 @@
+@import "../../styles/GlobalStyle.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: white;
+  max-width: 100%;
+  padding: 15px 20px;
+  margin: 0px auto;
+  font-family: $fontStyle;
+}
+
+.headerDark {
+  background-color: #171c28;
+}
+
+.headerDark li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fdfcfa !important;
+  text-decoration: none;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.greyColor {
+  color: gray;
+}
+
+.header li a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menuBtn:hover {
+  color: $midnightBlue;
+  font-weight: bolder;
+}
+
+.headerDark li a:hover,
+.headerDark .menuBtnDark:hover {
+  color: $aquaBlue !important;
+}
+
+.logoName {
+  color: $midnightBlue;
+  font-family: $logoFont2;
+  font-size: larger;
+}
+
+.logoNameDark {
+  color: $aquaBlue !important;
+}
+
+.header .logo {
+  display: block;
+  flex: none;
+  float: left;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menuIcon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menuIcon .navicon {
+  background-color: $midnightBlue;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.headerDark .menuIconDark .naviconDark {
+  background-color: $aquaBlue;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menuIcon .navicon:before,
+.header .menuIcon .navicon:after {
+  background: $midnightBlue;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header .menuIcon .navicon:before {
+  top: 5px;
+}
+
+.header .menuIcon .navicon:after {
+  top: -5px;
+}
+
+.headerDark .menuIconDark .navicon::before,
+.headerDark .menuIconDark .navicon::after {
+  background: $aquaBlue;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+// menu btn
+.header .menuBtn {
+  display: none;
+}
+
+.header .menuBtn:checked ~ .menu {
+  max-height: 512px;
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon {
+  background: transparent;
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menuBtn:checked ~ .menuIcon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
+.header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: $tablet) {
+  .header li {
+    float: left;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header .menu {
+    max-height: none;
+  }
+
+  .header .menuIcon {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .header .logo {
+    display: block;
+    flex: none;
+    float: left;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-top: -17px;
+    line-height: normal;
+  }
+}

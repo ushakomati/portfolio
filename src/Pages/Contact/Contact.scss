@@ -1,0 +1,72 @@
+@import '../../styles/GlobalStyle.scss';
+
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: $fontStyle;
+  color: $titleColor;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content-profile {
+  flex: 80%;
+}
+
+.description-title {
+  font-size: 3rem;
+  font-family: $fontStyle;
+  color: $subTitleColor;
+}
+
+.description-main-content{
+  font-size: $subTitleSize;
+  font-family: $fontStyle;
+  color: $subTitleColor;
+}
+
+.phone-number{
+  font-size: $subTitleSize;
+  font-family: $fontStyle;
+  color: $subTitleColor;
+}
+
+.location{
+  font-size: $subTitleSize;
+  font-family: $fontStyle;
+  color: $subTitleColor;
+}
+
+.lottieContainer-contact {
+  width: 70rem;  
+}
+
+@media (max-width: $tablet) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-profile {
+    text-align: center;
+    order: 2;
+  }
+
+  .lottieContainer-contact {
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+}
