@@ -9,9 +9,6 @@ import notes from "../../images/projects images/notes.svg";
 
 export const projectsSection = {
   title: "Projects",
-  subtitle:
-    "Here are some personal projects I have worked on. Feel free to explore my repositories.",
-
   projects: [
     {
       title: "Budget Tracker",

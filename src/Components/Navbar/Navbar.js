@@ -24,10 +24,10 @@ const Navbar = () => {
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#experience">Work Experiences</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a href="#projects">Personal Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
                         <a href="#education">Education</a>

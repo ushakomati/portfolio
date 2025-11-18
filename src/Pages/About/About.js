@@ -61,7 +61,10 @@ const About = () => {
                   .typeString("Full-Stack Developer")
                   .pauseFor(1000)
                   .deleteAll()
-                  .typeString("Welcomes You to my portfolio")
+                  .typeString("Backend Developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Senior Software Engineer")
                   .start();
               }}
             />
