@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4961fa0b.css",
-    "main.js": "/portfolio/static/js/main.1d4d216f.js",
+    "main.js": "/portfolio/static/js/main.a35331fc.js",
     "static/js/453.79388e89.chunk.js": "/portfolio/static/js/453.79388e89.chunk.js",
     "static/media/epam.png": "/portfolio/static/media/epam.3741afe785692d02f1a0.png",
     "static/media/springboot.png": "/portfolio/static/media/springboot.ff853e9edcc0518513b6.png",
@@ -9,7 +9,7 @@
     "static/media/tcs.png": "/portfolio/static/media/tcs.ecba6e23773c5ab17bde.png",
     "static/media/java.png": "/portfolio/static/media/java.311ea989dce14b91a4fe.png",
     "static/media/graphql.png": "/portfolio/static/media/graphql.153cda3ab470fd695937.png",
-    "static/media/Usha_Komati_Resume.pdf": "/portfolio/static/media/Usha_Komati_Resume.f3fd21e7b8cde4838d1b.pdf",
+    "static/media/Usha_Komati_Resume.pdf": "/portfolio/static/media/Usha_Komati_Resume.0f4ea36dc431424b1023.pdf",
     "static/media/prudential.png": "/portfolio/static/media/prudential.45384aec105eb5de92b4.png",
     "static/media/python.png": "/portfolio/static/media/python.0b1cedefee1696bebefd.png",
     "static/media/ml.png": "/portfolio/static/media/ml.159d5afe242a931c250b.png",
@@ -38,11 +38,11 @@
     "static/media/chat.svg": "/portfolio/static/media/chat.f6a17e7aa9a56fa5c217e4883707ab4d.svg",
     "index.html": "/portfolio/index.html",
     "main.4961fa0b.css.map": "/portfolio/static/css/main.4961fa0b.css.map",
-    "main.1d4d216f.js.map": "/portfolio/static/js/main.1d4d216f.js.map",
+    "main.a35331fc.js.map": "/portfolio/static/js/main.a35331fc.js.map",
     "453.79388e89.chunk.js.map": "/portfolio/static/js/453.79388e89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4961fa0b.css",
-    "static/js/main.1d4d216f.js"
+    "static/js/main.a35331fc.js"
   ]
 }
